@@ -1,0 +1,43 @@
+// Font Size & Line Height
+@for $i from 1 through 29 {
+  .fs-#{$i} {
+    font-size: $i / 16 + rem !important;
+  }
+  .lh-#{$i} {
+    line-height: $i / 16 + rem !important;
+  }
+}
+@for $i from 6 through 20 {
+  .fs-#{$i*5} {
+    font-size: ($i * 5) / 16 + rem !important;
+  }
+  .lh-#{$i*5} {
+    line-height: ($i * 5) / 16 + rem !important;
+  }
+}
+
+// Font Weight
+@for $i from 1 through 9 {
+  .fw-#{$i* 100} {
+    font-weight: $i * 100 !important;
+  }
+}
+
+// Border Radius
+@for $i from 0 through 30 {
+  .radius-#{$i} {
+    border-radius: $i + px !important;
+  }
+  .btlr-#{$i} {
+    border-top-left-radius: $i + px !important;
+  }
+  .btrr-#{$i} {
+    border-top-right-radius: $i + px !important;
+  }
+  .bblr-#{$i} {
+    border-bottom-left-radius: $i + px !important;
+  }
+  .bbrr-#{$i} {
+    border-bottom-right-radius: $i + px !important;
+  }
+}
